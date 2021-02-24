@@ -153,7 +153,7 @@ a {
 }
 .letter {
   fill: currentColor;
-  background-size: contain;
+  /* background-size: contain; */
   /* background-color: lawngreen; */
   margin-right: 10px;
 }
@@ -364,7 +364,10 @@ a {
 }
 
 .clients-company-logo {
-  background-color: red;
+  /* background-color: red; */
+}
+.link-logo {
+  display: block;
 }
 
 .button {
