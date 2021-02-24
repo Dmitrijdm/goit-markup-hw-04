@@ -364,6 +364,8 @@ a {
 }
 
 .clients-company-logo {
+  width: 170px;
+  height: 90px;
   /* background-color: red; */
 }
 .link-logo {
