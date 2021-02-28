@@ -516,7 +516,7 @@ li.team-list-item {
   background-color: var(--button-blue);
 }
 
-.fooot a:hover svg {
+.foot a:hover svg {
   fill: var(--back-white);
 }
 
@@ -558,7 +558,7 @@ h3 {
 
 .foot-style {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .foot-social > h3 {
