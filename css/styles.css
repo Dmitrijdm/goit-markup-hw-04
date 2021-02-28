@@ -143,14 +143,34 @@ a {
 }
 
 .contacts-link {
-  display: block;
+  display: flex;
   color: var(--gray-text);
   padding: 32px 0;
+  align-items: center;
 }
+
 .contacts-link:hover,
 .contacts-link:focus {
+  fill: var(--blue-text);
+  color: var(--blue-text);
+  cursor: pointer;
+}
+
+.contacts-link:hover svg {
+  fill: var(--blue-text);
   color: var(--blue-text);
 }
+
+/* .contacts-link:focus {
+  color: var(--blue-text);
+  fill: red;
+} */
+
+.contacts-link svg {
+  margin-right: 10px;
+  fill: var(--gray-text);
+}
+
 .letter {
   fill: currentColor;
   /* background-size: contain; */
@@ -248,6 +268,23 @@ a {
 .advantages-item {
   width: 270px;
   margin-right: 30px;
+}
+
+.premium {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: var(--back-light-gray);
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.premium-svg {
+  width: 70px;
+  height: 70px;
 }
 
 .list-title {
@@ -359,17 +396,34 @@ li.team-list-item {
 .social-icons {
   display: flex;
   padding: 0px;
-  margin: 0px;
-  outline: 1px solid black;
-
+  margin-top: 16px;
   justify-content: space-around;
 }
 
-.social-icons li {
+.social-icons a {
+  display: flex;
+
   width: 44px;
   height: 44px;
-  background-color: green;
   padding: 0px;
+  margin: 0px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.social-icons a:hover {
+  background-color: var(--button-blue);
+}
+
+.social-icons a:hover svg {
+  fill: var(--back-white);
+}
+
+.social-icons svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
 }
 
 /* Секция клиенты!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -379,24 +433,46 @@ li.team-list-item {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .clients-company {
   display: flex;
   padding: 0px;
   margin: 0px;
-  border: 1px solid black;
+
+  align-items: center;
+  justify-content: space-between;
 }
 
 .clients-company-logo {
-  /* width: 170px;
-  height: 90px; */
-  /* background-color: red; */
+  display: flex;
+  width: 170px;
+  height: 90px;
+
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
-.link-logo {
-  display: block;
+.clients-company-logo:hover {
+  /* background-color: var(--button-blue); */
+  border: 1px solid #2196f3;
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
 }
+
 .icon {
+  fill: #afb1b8;
+  width: 42px;
+  height: 49px;
+}
+
+.clients-company-logo:hover .icon {
+  fill: var(--blue-text);
 }
 
 .button {
@@ -416,10 +492,53 @@ li.team-list-item {
   background-color: var(--back-dark);
 }
 
+.foot {
+  display: flex;
+  padding: 0px;
+  margin-top: 16px;
+  justify-content: space-around;
+}
+
+.foot a {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  width: 44px;
+  height: 44px;
+  padding: 0px;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.foot a:hover {
+  background-color: var(--button-blue);
+}
+
+.fooot a:hover svg {
+  fill: var(--back-white);
+}
+
+.foot svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--white-text);
+}
+
+h3 {
+  color: var(--white-text);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
 .cont-foot {
   padding-top: 60px;
   padding-bottom: 60px;
   padding-left: 215px;
+  margin-right: 70px;
 }
 
 .link-adress {
@@ -435,6 +554,19 @@ li.team-list-item {
   font-size: 26px;
   line-height: 1.19;
   font-family: 'Raleway', sans-serif;
+}
+
+.foot-style {
+  display: flex;
+  align-items: center;
+}
+
+.foot-social > h3 {
+  color: var(--white-text);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 
 .address {
@@ -479,7 +611,6 @@ li.team-list-item {
   font-size: 16px;
   line-height: 1.6;
   border-radius: 4px;
-  `-spacing: 0.03em;
   padding: 6px 22px;
 }
 
@@ -490,6 +621,9 @@ li.team-list-item {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+  cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .btn-list {
@@ -518,6 +652,10 @@ li.team-list-item {
   line-height: 1.9;
 }
 
+.thumb {
+  padding-bottom: 94px;
+}
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -530,6 +668,12 @@ li.team-list-item {
   margin-right: 30px;
   margin-bottom: 30px;
   border-bottom: 1px solid #eeeeee;
+}
+
+.flex-elements:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 
 /* убирает каждому третьему отступ справа */
