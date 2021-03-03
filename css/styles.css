@@ -531,7 +531,7 @@ h3 {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.2;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .cont-foot {
@@ -640,20 +640,21 @@ h3 {
 }
 
 .project-title {
+  font-family: Roboto;
   color: var(--black-text);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
 }
 .service {
-  color: var(--black-text);
+  color: var(--gray-text);
   font-family: Roboto;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 2;
+  line-height: 1.9;
   letter-spacing: 0.06em;
-
-  color: #212121;
+  letter-spacing: 0.03em;
 }
 
 .thumb {
