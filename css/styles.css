@@ -646,10 +646,14 @@ h3 {
   line-height: 2;
 }
 .service {
-  color: var(--gray-text);
-  font-weight: normal;
+  color: var(--black-text);
+  font-family: Roboto;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: #212121;
 }
 
 .thumb {
@@ -667,7 +671,8 @@ h3 {
   /* background-color: tomato; */
   margin-right: 30px;
   margin-bottom: 30px;
-  border-bottom: 1px solid #eeeeee;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
 
 .flex-elements:hover {
